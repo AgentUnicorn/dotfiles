@@ -3,6 +3,7 @@
 ## 🧬 Clone the Repository
 
 ```bash
+mkdir ~/.dotfiles
 git clone https://github.com/AgentUnicorn/dotfiles.git $HOME/.dotfiles
 ```
 
