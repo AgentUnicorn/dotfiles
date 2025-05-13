@@ -23,8 +23,8 @@ M.setup = function()
 		local SOLID_LEFT_ARROW = utf8.char(0xe0b2)
 		local segments = segments_for_right_status(window)
 
-		local bg = wezterm.color.parse(colorscheme["linkarzu_color10"])
-		local fg = colorscheme["linkarzu_color14"]
+		local bg = wezterm.color.parse(colorscheme["shirodev_color10"])
+		local fg = colorscheme["shirodev_color14"]
 
 		local gradient_to, gradient_from = bg
 		gradient_from = gradient_to:lighten(0.2)

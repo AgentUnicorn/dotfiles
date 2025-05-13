@@ -38,7 +38,9 @@ config = {
 	cursor_blink_ease_in = "Constant",
 	cursor_blink_rate = 0,
 
-	default_prog = { "C:\\Program Files\\PowerShell\\7\\pwsh.exe" },
+	-- Powershell
+	-- default_prog = { "C:\\Program Files\\PowerShell\\7\\pwsh.exe" },
+	default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe", "-i" },
 
 	-- Terminal opacity
 	window_background_opacity = 0.8,
