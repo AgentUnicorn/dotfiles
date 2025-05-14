@@ -5,6 +5,8 @@ local function project_dirs()
 	return {
 		"D:\\ai-writer\\ai-writer-fe",
 		"D:\\ai-writer\\ai-writer-be",
+		"D:\\building-detection",
+		"D:\\keywish",
 	}
 end
 
@@ -19,7 +21,7 @@ function module.choose_project()
 		choices = choices,
 		fuzzy = true,
 		action = wezterm.action_callback(function(child_window, child_pane, id, label)
-			wezterm.log_info("You chose " .. label)
+			child_pane:send_text('cd "' .. label .. '"\n')
 		end),
 	})
 end

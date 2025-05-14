@@ -24,7 +24,7 @@ ZSH_THEME="robbyrussell"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-lugins=(git lighthouse zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git aliases lighthouse zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 

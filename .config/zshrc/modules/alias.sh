@@ -15,3 +15,6 @@ alias .....="cd ../../../.."
 alias nvimconf="nvim $HOME/AppData/Local/nvim"
 alias conf="nvim $HOME/.dotfiles"
 alias sourcezsh="source $HOME/.zshrc"
+
+# Extended Git
+alias ccb="gb --show-current | clip.exe"
