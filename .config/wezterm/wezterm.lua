@@ -1,12 +1,11 @@
 local wezterm = require("wezterm")
 local keybindings = require("keybindings")
 local colors = require("colors")
-local status_line = require("statusline")
+local tabline = require("tabline")
 
 local config = wezterm.config_builder()
 local colorscheme = colors.colorscheme
-
-status_line.setup()
+tabline.setup()
 
 config = {
 	prefer_egl = true,
@@ -53,27 +52,5 @@ config = {
 	keys = keybindings.keys,
 	key_tables = keybindings.key_tables,
 }
-
--- wezterm.on("update-right-status", function(window, pane)
--- 	local name = window:active_key_table()
--- 	if name then
--- 		local SOLID_LEFT_ARROW = utf8.char(0xe0b2)
---
--- 		local bg = colorscheme["linkarzu_color10"]
--- 		local fg = colorscheme["linkarzu_color14"]
---
--- 		window:set_right_status(wezterm.format({
--- 			{ Background = { Color = "None" } },
--- 			{ Foreground = { Color = bg } },
--- 			{ Text = SOLID_LEFT_ARROW },
--- 			{ Background = { Color = bg } },
--- 			{ Foreground = { Color = fg } },
--- 			{ Text = " TABLE: " .. name .. " " },
--- 		}))
--- 	else
--- 		-- Clear the right status when no key table is active
--- 		window:set_right_status("")
--- 	end
--- end)
 
 return config
