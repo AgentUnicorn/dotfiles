@@ -1,8 +1,6 @@
 alias ll='ls -lh'
 alias lla='ls -alh'
 
-alias colorscheme="$HOME/.dotfiles/.config/zshrc/colorscheme-set.sh"
-
 # Directory aliases
 alias md="mkdir -p"
 alias rd="rmdir"
@@ -18,3 +16,7 @@ alias sourcezsh="source $HOME/.zshrc"
 
 # Extended Git
 alias ccb="gb --show-current | clip.exe"
+
+# Shell script
+alias colorscheme="$HOME/.dotfiles/.config/zshrc/colorscheme-set.sh"
+alias project="$HOME/.dotfiles/.config/gum/select-project.sh"
