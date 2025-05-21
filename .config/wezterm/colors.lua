@@ -53,17 +53,17 @@ M.colors = {
 	},
 
 	-- Tab bar
-	tab_bar = {
-		background = "None",
-		active_tab = {
-			fg_color = colors["shirodev_color04"],
-			bg_color = colors["shirodev_color14"],
-		},
-		inactive_tab = {
-			fg_color = colors["shirodev_color09"],
-			bg_color = colors["shirodev_color25"],
-		},
-	},
+	-- tab_bar = {
+	-- 	background = "None", -- Make tabline background transparent
+	-- 	active_tab = {
+	-- 		fg_color = colors["shirodev_color14"],
+	-- 		bg_color = colors["shirodev_color03"],
+	-- 	},
+	-- 	inactive_tab = {
+	-- 		fg_color = colors["shirodev_color14"],
+	-- 		bg_color = colors["shirodev_color15"],
+	-- 	},
+	-- },
 }
 
 return M
