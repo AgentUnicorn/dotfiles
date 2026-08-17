@@ -1,0 +1,17 @@
+#!/bin/bash
+
+alias clr='clear'
+
+# Eza (Better ls) Aliases
+alias ls='eza --color=always --group-directories-first --icons=always'
+alias ll='eza -lh --color=always --group-directories-first --icons=always'
+alias la='eza -lah --color=always --group-directories-first --icons=always'
+alias tree='eza --tree --color=always --icons=always'
+
+alias mcp-inspector='npx @modelcontextprotocol/inspector'
+
+alias vi="nvim"
+alias vim="nvim"
+
+alias md="mkdir -p"
+alias rd="rmdir"

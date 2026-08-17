@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Commond Apps
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+# Paths
+export DOCKER_HOST='unix:///run/user/1000/podman/podman-machine-default-api.sock'
+export PATH="$PATH:/home/shiro/.lmstudio/bin"
+
+
+source $HOME/.bashrc
