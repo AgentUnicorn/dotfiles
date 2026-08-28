@@ -1,6 +1,9 @@
 #!/bin/bash
 
+# Base
 alias clr='clear'
+alias md="mkdir -p"
+alias rd="rmdir"
 
 # Eza (Better ls) Aliases
 alias ls='eza --color=always --group-directories-first --icons=always'
@@ -10,8 +13,24 @@ alias tree='eza --tree --color=always --icons=always'
 
 alias mcp-inspector='npx @modelcontextprotocol/inspector'
 
+# Editor
 alias vi="nvim"
 alias vim="nvim"
 
-alias md="mkdir -p"
-alias rd="rmdir"
+# podman, kubernetes
+alias p="podman"
+alias pc="podman-compose"
+alias k="kubectl"
+
+# Direct docker commands to Podman
+alias docker="podman"
+
+# Intercept 'docker compose' while passing all other 'docker' commands to podman
+# docker() {
+#   if [ "$1" = "compose" ]; then
+#     shift
+#     podman-compose "$@"
+#   else
+#     podman "$@"
+#   fi
+# }
